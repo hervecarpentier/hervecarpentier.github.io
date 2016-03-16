@@ -522,9 +522,12 @@ section#contact{
 	}
 
 section#contact .section-heading{
-	color:#fff;
+	color:rgba(255,255,255,1);
 	background: transparent;
 	}
+section#contact a {
+	color:#b3b3b3;
+}
 
 section#contact .form-group{
 	margin-bottom:25px;
