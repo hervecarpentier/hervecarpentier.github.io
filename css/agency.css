@@ -526,7 +526,7 @@ section#contact .section-heading{
 	background: transparent;
 	}
 
-section#contact h3 {
+section#contact .section-subheading .text-muted {
 	color: rgba(255,255,255,1);
 	padding-bottom: 25px;
 }
