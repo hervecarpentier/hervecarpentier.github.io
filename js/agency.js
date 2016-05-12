@@ -10,7 +10,7 @@ $(function() {
 
 
  
-	$(document).ready(function() {
+$(document).ready(function() {
 	  var stopVideo = function(player) {
 	    var vidSrc = player.prop('src');
 	    player.prop('src', ''); // to force it to pause
@@ -19,7 +19,7 @@ $(function() {
 	  $('.portfolio-modal').on('hidden.bs.modal', function() {
 	    stopVideo($('#video'));
 	  });
-	});
+});
 
 
 
