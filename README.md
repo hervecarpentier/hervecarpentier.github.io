@@ -1,2 +1,2 @@
-# https://hervecarpentier.github.io
+# hervecarpentier.github.io
 HerveCarpentierDeChangy
