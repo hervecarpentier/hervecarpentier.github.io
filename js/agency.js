@@ -12,8 +12,7 @@ $(function() {
  
 function stopVideo(player) {
    $('.videoFrame').each(function(index, element) { 
-       var src = element.src;
-        var vidSrc = player.prop('src'); 
+       var src = element.src; 
        element.src = ""; 
        element.src = src;
    })
