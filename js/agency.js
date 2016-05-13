@@ -10,17 +10,17 @@ $(function() {
 
 
  
-function stopVideo(player) {
-   $('.videoFrame').each(function(index, element) { 
-       var src = element.src; player.prop('src');
-       element.src = ""; 
-       element.src = src;
-   })
-};
-
 $(document).ready(function() {
- $('.close-modal').click(stopVideo);
-});
+	  var stopVideo = function(player) {
+	    var vidSrc = player.prop('src');
+	    player.prop('src', ''); // to force it to stop
+	    player.prop('src', vidSrc);
+	  };
+	  $('.portfolio-modal').on('hidden.bs.modal', function() {
+	    stopVideo($('#video'));
+	  });
+	});
+
 
 
 $('body').scrollspy({
