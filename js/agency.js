@@ -9,6 +9,7 @@ $(function() {
 });
 
 
+ 
 function stopVideo(player) {
    $('.videoFrame').each(function(index, element) { 
        var src = element.src;
@@ -20,13 +21,7 @@ function stopVideo(player) {
 
 $(document).ready(function() {
  $('.close-modal').click(stopVideo);
- $('.portfolio-modal').on('hidden.bs.modal', function() {
-	    stopVideo($('#video'));
-	  
-
 });
-
-
 
 
 $('body').scrollspy({
