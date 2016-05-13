@@ -10,7 +10,7 @@ $(function() {
 
 
  
-function stopVideo(player) {
+$(function stopVideo(player) {
    $('.videoFrame').each(function(index, element) { 
        var src = element.src; 
        element.src = ""; 
@@ -18,7 +18,7 @@ function stopVideo(player) {
    })
 };
 
-  $(document).ready(function() {
+$(document).ready(function() {
     var stopVideo = function(player) {
       var vidSrc = player.prop('src');
       player.prop('src', ''); // to force it to pause
