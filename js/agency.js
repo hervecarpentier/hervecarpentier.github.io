@@ -19,8 +19,7 @@ function stopVideo(player) {
 };
 
 $(document).ready(function() {
- $('.portfolio-modal').on('hidden.bs.modal', function() {
-	    stopVideo($('#video'));
+ $('.close-modal').click(stopVideo);
 });
 
 
