@@ -16,11 +16,14 @@ function stopVideo(player) {
         var vidSrc = player.prop('src'); 
         player.prop('src', ''); // to force it to pause
 	player.prop('src', vidSrc);
-   })
-};
+       })
+       $('.portfolio-modal').on('hidden.bs.modal', function() {
+	    stopVideo($('#video'));
+       });
+});
 
 $('.portfolio-modal').on('hidden.bs.modal', function() {
- $('.close-modal').click(stopVideo);
+ stopVideo($('#video'));
 });
 
 
