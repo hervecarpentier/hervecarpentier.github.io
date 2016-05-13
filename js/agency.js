@@ -11,21 +11,17 @@ $(function() {
 
  
 function stopVideo(player) {
-   $('.videoFrame').ready((function() { 
-       var stopVideo = function(player) {
+   $('.videoFrame').each(function(index, element) { 
+       var src = element.src;
         var vidSrc = player.prop('src'); 
-        player.prop('src', ''); // to force it to pause
-	player.prop('src', vidSrc);
-       })
-       $('.portfolio-modal').on('hidden.bs.modal', function() {
-	    stopVideo($('#video'));
-       });
-});
+       element.src = ""; 
+       element.src = src;
+   })
+};
 
-$('.portfolio-modal').on('hidden.bs.modal', function() {
- stopVideo($('#video'));
+$(document).ready(function() {
+ $('.close-modal').click(stopVideo);
 });
-
 
 
 $('body').scrollspy({
