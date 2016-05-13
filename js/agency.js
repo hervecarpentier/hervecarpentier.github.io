@@ -22,6 +22,15 @@ $(document).ready(function() {
  $('.close-modal').click(stopVideo);
 });
 
+
+function stopVideo(player) {
+   $('.videoFrame').each(function(index, element) { 
+       var src = element.src; 
+       element.src = ""; 
+       element.src = src;
+   })
+};
+
 $(document).ready(function() {
     var stopVideo = function(player) {
       var vidSrc = player.prop('src');
