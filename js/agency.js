@@ -28,6 +28,9 @@ $(document).ready(function() {
 	    stopVideo($('#video'));
 	  });
 	});
+$(document).ready(function() {
+ $('.close-modal').click(stopVideo);
+});
 
 
 $('body').scrollspy({
