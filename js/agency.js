@@ -21,9 +21,7 @@ function stopVideo(player) {
 	  });
 	});
 
-$(document).ready(function() {
- $('.close-modal').click(stopVideo);
-});
+
 
 
 
