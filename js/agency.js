@@ -24,7 +24,9 @@ $(document).ready(function() {
      player.prop('src', ''); // to force it to pause
 	 player.prop('src', vidSrc);
  };
- $('.close-modal').click(stopVideo);
+ $('.portfolio-modal').on('hidden.bs.modal', function() {
+ 	stopVideo($('#video'));
+ });
 });
 
 
