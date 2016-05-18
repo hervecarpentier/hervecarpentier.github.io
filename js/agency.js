@@ -26,6 +26,18 @@ $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
 
+function stopVideo(player) {
+   $('.videoFrame').each(function(index, element) { 
+       var src = element.src; 
+       element.src = ""; 
+       element.src = src;
+   })
+};
+
+$(document).ready(function() {
+ $('.close-modal').click(stopVideo);
+});
+
 
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
