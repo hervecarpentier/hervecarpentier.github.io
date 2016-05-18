@@ -19,14 +19,7 @@ $(document).ready(function() {
 	 });
 });
 
- 
-function stopVideo(player) {
-   $('.videoFrame').each(function(index, element) { 
-       var src = element.src; 
-       element.src = ""; 
-       element.src = src;
-   })
-};
+
 
 $(document).ready(function() {
  $('.close-modal').click(stopVideo);
