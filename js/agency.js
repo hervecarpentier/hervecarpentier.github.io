@@ -11,7 +11,7 @@ $(function() {
 
  
 function stopVideo(player) {
-   $('.videoFrame').each(function(index, element) { 
+   $('.modal-content').each(function(index, element) { 
        var src = element.src; 
        element.src = ""; 
        element.src = src;
