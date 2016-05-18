@@ -22,7 +22,6 @@ $(document).ready(function() {
  $('.close-modal').click(stopVideo);
 });
 
-
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
