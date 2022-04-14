@@ -364,7 +364,7 @@ body{
 
 
 
-#dchangee .portfolio-item{
+#games .portfolio-item{
 		margin:0 0 15px;right:0
 		}
 
@@ -375,7 +375,7 @@ body{
 		margin:0 auto;
 	}
 
-#dchangee .portfolio-item .portfolio-link .portfolio-hover {
+#games .portfolio-item .portfolio-link .portfolio-hover {
 	background:rgba(158, 147, 161, 0.8);
 		position:absolute;
 		width:100%;
@@ -386,14 +386,14 @@ body{
 		-moz-transition:all ease .5s;
 	}
 
-	#dchangee .portfolio-item .portfolio-link .portfolio-hover:hover{
+	#games .portfolio-item .portfolio-link .portfolio-hover:hover{
 		
 		opacity:1;
 		}
 
 
 	
-	#dchangee .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
+	#games .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
 		position:absolute;
 		width:100%;
 		height:20px;
@@ -403,16 +403,16 @@ body{
 		margin-top:-12px;
 		color:#fff
 	}
-	#dchangee .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i{
+	#games .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i{
 		margin-top:-12px
 		}
 
-	#dchangee .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
+	#games .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
 		margin:0;
 
 	}
 
-	#dchangee .portfolio-item .portfolio-caption {
+	#games .portfolio-item .portfolio-caption {
 		max-width:400px;
 		margin:0 auto;
 		background-color:#fff;
@@ -420,17 +420,17 @@ body{
 		padding:25px
 		}
 
-	#dchangee .portfolio-item .portfolio-caption h4{
+	#games .portfolio-item .portfolio-caption h4{
 		text-transform:none;margin:0
 	}
 
-	#dchangee .portfolio-item .portfolio-caption p{ 
+	#games .portfolio-item .portfolio-caption p{ 
 		font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:italic;
 		font-size:16px;
 		margin:0;
 		}
 
-	#dchangee *{z-index:2}@media (min-width:767px){#portfolio .portfolio-item{
+	#games *{z-index:2}@media (min-width:767px){#portfolio .portfolio-item{
 		margin:0 0 30px;
 		}
 
@@ -761,20 +761,22 @@ body{
 	webkit-tap-highlight-color:#9e93a1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
+		
+		
+.wise-iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.10%;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.wise-iframe-wrapper iframe,
+.wise-iframe-wrapper object,
+.wise-iframe-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
