@@ -22,9 +22,9 @@ $(document).ready(function() {
  $('.close-modal').click(stopVideo);
 });
 
-$(document).ready(function() {
+/*$(document).ready(function() {
  $('.index').click(stopVideo);
-});
+}); */
 
 
 $('body').scrollspy({
