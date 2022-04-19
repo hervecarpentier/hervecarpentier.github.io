@@ -19,7 +19,7 @@ function stopVideo(player) {
 };
 
 $(document).ready(function() {
- $('.close-modal','.index').click(stopVideo);
+ $('.close-modal').click(stopVideo);
 });
 
 
