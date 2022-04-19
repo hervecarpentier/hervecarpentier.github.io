@@ -19,10 +19,8 @@ function stopVideo(player) {
 };
 
 $(document).ready(function() {
- $('.close-modal').click(stopVideo);
+ $('.close-modal','index').click(stopVideo);
 });
-
-
 
 
 $('body').scrollspy({
